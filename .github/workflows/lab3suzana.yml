@@ -1,0 +1,15 @@
+name: Lab 3 Workflow
+
+on: push
+
+jobs:
+  build:
+    name: First Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step One
+        uses: actions/checkout@v4
+      - name: Step Two
+        run: ls -la
+      - name: Step Three
+        run: pwd
